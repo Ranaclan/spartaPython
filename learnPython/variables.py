@@ -34,5 +34,9 @@ name = input("What is your name? ")
 age = int(input("What is your age? "))
 month = input("What month were you born? ")
 year = input("What year were you born? ")
+height = float(input("What is your height? "))
 print(f"Hi {name}, {age}")
 print(f"You were born in {month} of the year {year}.")
+
+user_details_list = [name, age, month, year, height]
+print(user_details_list)
