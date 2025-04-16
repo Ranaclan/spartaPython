@@ -25,4 +25,4 @@ score_as_decimal = score/max_score
 print(f"You scored {score_as_decimal}")
 print(f"You scored {score_as_decimal * 100}%")
 print(f"You scored {round(score_as_decimal * 100, 2)}%")
-print(f"You scored {round(score_as_decimal * 100, 0)}%")
+print(f"You scored {round(score_as_decimal * 100)}%")
