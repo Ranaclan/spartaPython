@@ -6,21 +6,24 @@ menu = {
         "Name" : "starter",
         "Cheese" : 5,
         "Bread" : 4,
-        "Soup" : 8
+        "Soup" : 8,
+        "Nothing" : 0
     },
 
     "mains" : {
         "Name" : "main",
         "Pie" : 10,
         "Meat" : 15,
-        "Fish" : 11
+        "Fish" : 11,
+        "Nothing" : 0
     },
 
     "desserts" : {
         "Name" : "dessert",
         "Cake" : 6,
         "Ice Cream" : 3,
-        "Chocolate" : 4
+        "Chocolate" : 4,
+        "Nothing" : 0
     }
 }
 
@@ -31,10 +34,10 @@ def print_course_options(courseList, valueList):
         print(f"{courseList[i]}, £{valueList[i]}")
 
 def get_choice(courseList):
-    choice = input()
+    choice = input().capitalize()
     while choice not in courseList:
         print("That is not an option")
-        choice = input()
+        choice = input().capitalize()
     return choice
 
 def take_order():
@@ -48,7 +51,7 @@ def take_order():
             print_course_options(courseList, valueList)
             order.append(get_choice(courseList))
 
-        print(f"Confirm (y/n), you would like a {order[0]} starter, a {order[1]} main and a {order[2]} dessert?")
+        print(f"Confirm (y/n), you would like {order[0].lower()} for your starter, {order[1].lower()} for your main and {order[2].lower()} for dessert?")
         confirm = input() == "y"
     return order
 
