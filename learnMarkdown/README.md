@@ -1,6 +1,7 @@
 # heading 1
 
-[Lists](#list)
+* [Lists](#list)
+* [Tables](#tables)
 
 **bold**
 <br>
@@ -22,6 +23,7 @@ print("A")
 2. 1
 3. 1
 
+## tables
 
 x|y|z
 -|-|-
